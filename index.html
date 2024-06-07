@@ -8,8 +8,37 @@
 </head>
 <body>
     <div class="container" id="container">
-        <button><span><img src="icons/plus-thick.svg"></span><span>Add book</span></button>
+        <button id="modal-button"><span><img src="icons/plus-thick.svg"></span><span>Add book</span></button>
     </div>
+
+    <dialog>
+        <form method="dialog">
+            <div>
+                <label>
+                    Name:
+                    <input type="text" required id="name">
+                </label>
+            </div>
+            <div>
+                <label>
+                    Author:
+                    <input type="text" required id="author">
+                </label>
+            </div>
+            <div>
+                <label>
+                    Pages: 
+                    <input type="number" min="10" max="5000" required id="pages">
+                </label>
+            </div>
+            <div>
+                <label>Have read?<input type="checkbox" id="haveRead"></label>
+            </div>
+            <input type="submit" id="novalidate-close" value="Close" formnovalidate>
+            <button class="submit-btn" id="submit">Submit</button>
+        </form>
+    </dialog>
+
    <div class="table-container" id="table">
         <table>
             <thead>
@@ -25,6 +54,7 @@
             </tbody>
         </table>
    </div>
+   
     <script src="script.js"></script>
 </body>
 </html>

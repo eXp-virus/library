@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+input, label {
+    font: inherit;
+}
+
 body {
     background: linear-gradient(to right, #5761B2, #1FC5A8);
 }  
@@ -18,7 +22,7 @@ img {
     margin: 1rem 0 2rem 2rem;
 }
 
-button {
+.container > button {
     border: none;
     background-color: slategray;
     border-radius: 16px;
@@ -33,13 +37,56 @@ button:hover {
     background-color: darkslategrey;
 }
 
+dialog {
+    position: fixed;
+    top: 10%;
+    left: 30%;
+    width: 400px;
+    padding: 1rem 2rem;
+    background-color: #a5f3fc;
+    border-radius: 8px;
+}
+
+label {
+    font-size: 18px;
+}
+
+input {
+    margin: 10px 0;
+    height: 1.5em;
+    border: 1px solid gainsboro;
+    border-radius: 4px;
+    padding-left: 4px;
+}
+
+input[type="checkbox"] { 
+    vertical-align: middle; 
+    position: relative; 
+    bottom: 1px; 
+    margin-left: 10px;
+}
+
+input[type="submit"] {
+    color: white;
+    padding: 0.1em 0.5em 0.5em 0.5em;
+    background-color: rgb(17, 66, 115);
+}
+
+.submit-btn {   
+    background-color: green;
+    color: white;
+    padding: 0.3em;
+    border: none;
+    border-radius: 4px;
+    margin-left: 2em;
+}
 
 table {
     border-collapse: collapse;
     border: 2px solid rgb(200,200,200);
     letter-spacing: 1px;
     font-size: 0.8rem;
-    margin: auto;
+    margin-left: 20vw;
 }
   
 td, th {
@@ -54,4 +101,6 @@ th {
   
 td {
     text-align: center;
+    color: rgb(240, 255, 255);
+    font-size: 18px;
 }
