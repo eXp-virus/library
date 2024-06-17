@@ -45,9 +45,9 @@ modal.addEventListener('click', () => {
 btn.addEventListener('click', (e) => {
     e.preventDefault();
     addBookToLibrary();
-    form.reset();
     dialog.close(); // close modal
     displayData();
+    form.reset();
 })
 
 
